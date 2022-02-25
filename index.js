@@ -15,8 +15,10 @@ app.use(cors());
 
 
 app.use('/posts', postRoutes);
-app.get('/', (res,req)=>{
-        res.send('hello api')
+
+app.get('/', (req,res)=>{
+
+        res.send('hello api');
 })
 
 
